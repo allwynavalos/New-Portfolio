@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
+
+body {
+  margin: 0px;
+}
+
+#about,
+#projects,
+#linkedin,
+#github {
+  /* we need to cast important because UIkit paints a tag as blue */
+  color: black !important;
+}
+
+#about:hover,
+#projects:hover,
+#linkedin:hover,
+#github:hover {
+  /* we cast important for our hover color because the original black color will take precendence */
+  color: rgb(255, 69, 0) !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#about {
+  position: absolute;
+  top: 0;
+  border: 0;
+  left: 0;
+}
+
+#projects {
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  left: 0;
+}
+
+#linkedin {
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+
+#github {
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  right: 0;
+}
+
+#links {
+  font-family: "Eczar", sans-serif;
+  font-size: 1.5rem;
+}
+
+#container {
+  /* Center the text. */
+  color: black;
+  position: absolute;
+  margin: auto;
+  width: 100vw;
+  height: 80pt;
+  top: 0;
+  bottom: 0;
+  filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+
+  font-family: "Eczar", sans-serif;
+  font-size: 85pt;
+
+  text-align: center;
+
+  user-select: none;
+}

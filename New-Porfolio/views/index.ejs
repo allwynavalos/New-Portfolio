@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.20/css/uikit.min.css" />
+     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script defer src="/javascripts/animation.js"></script>
+
+
+     <!-- UI KIT JS -->
+     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.20/js/uikit.min.js"></script>
+     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.20/js/uikit-icons.min.js"></script>
+ </head>
+ <div id="links">
+ 
+   <a id="about" href="#modal-about" uk-toggle>About Me</a>
+ 
+ <div id="modal-about" class="uk-modal-full" uk-modal>
+     <div class="uk-modal-dialog">
+         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+             <div class="uk-background-cover" style="background-image: url('images/photo.jpg');" uk-height-viewport></div>
+             <div class="uk-padding-large">
+                 <h1>About Me</h1>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+             </div>
+         </div>
+     </div>
+ </div>
+   
+   
+   
+   
+   <a id="projects" href="#modal-projects" uk-toggle>Projects</a>
+   
+    <div id="modal-projects" class="uk-modal-full" uk-modal>
+         <div class="uk-modal-dialog">
+             <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+             <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                 
+                 <div class="uk-background-cover" style="background-image: url(../images/flower-ml_01.png); background-size: contain"
+                     uk-height-viewport></div>
+                 <div class="uk-padding-large">
+                     <h1>Project 1</h1>
+                     <h4>IOS Image Recognition App</h4>
+                     <p>
+                         <strong>Made With</br> Swift, Python, coreML</strong>
+                     </p>
+                     <p>
+                         IOS application that uses IOS's native API for image capturing and running it through a trained
+                         Caffe Machine Learning Model
+                         to detect which type of flower it is. After detecting the flower, it makes an API call and
+                         searches
+                         through wikipedia to pull related information.
+                     </p>
+                   
+ 
+                 </div>
+             </div>
+         </div>
+     </div>
+   
+   
+   
+   <a id="linkedin">LinkedIn</a>
+   <a id="github">GitHub</a>
+ </div>
+ <!-- Display text; invisible text -->
+ <div id="container">
+   <span id="text1"></span>
+   <span id="text2"></span>
+ </div>
+ 
+ <!-- SVG filter to create the merging effect -->
+ <svg id="filters">
+   <defs>
+     <filter id="threshold">
+       <!-- Threshold effect. -->
+       <feColorMatrix in="SourceGraphic"
+           type="matrix"
+           values="1 0 0 0 0
+                   0 1 0 0 0
+                   0 0 1 0 0
+                   0 0 0 260 -130" />
+     </filter>
+   </defs>
+ </svg>
+</html>
